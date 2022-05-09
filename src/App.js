@@ -1,10 +1,16 @@
-import { Button } from 'antd';
 import React from 'react';
+import { Layout, Menu } from 'antd';
+import AppHeader from './components/common/Header';
+const { Header } = Layout;
 
 const App = () => {
   return (
     <div>
-      <Button type="primary"> hello</Button>
+      <Layout className="mainLayout">
+        <Header>
+          <AppHeader />
+        </Header>
+      </Layout>
     </div>
   );
 };
